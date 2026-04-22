@@ -1,1032 +1,1308 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Math & Net Mashup Day 2026 | UiTM Perlis</title>
-  <meta name="description" content="Math & Net Mashup Day 2026 at UiTM Perlis. Mathematics, computing, creativity, and community in one vibrant faculty event." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math & Net Mashup Day 2026 | UiTM Perlis</title>
+    <meta
+      name="description"
+      content="Math & Net Mashup Day 2026 at UiTM Perlis. Mathematics, computing, creativity, and community in one vibrant faculty event."
+    />
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-  <style>
-    :root {
-      --primary: #1f2f6f;
-      --primary-light: #2c418f;
-      --primary-deep: #0f173a;
-      --secondary: #6b2c91;
-      --secondary-light: #8e44ad;
-      --accent: #f2b134;
-      --accent-glow: rgba(242, 177, 52, 0.4);
-      --soft-bg: #f8fafc;
-      --text-main: #1e293b;
-      --text-muted: #64748b;
-      --white: #ffffff;
-      --glass: rgba(255, 255, 255, 0.03);
-      --border-color: #e2e8f0;
-      --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-    }
+    <style>
+      :root {
+        --primary: #1f2f6f;
+        --primary-light: #2c418f;
+        --primary-deep: #0f173a;
+        --secondary: #6b2c91;
+        --secondary-light: #8e44ad;
+        --accent: #f2b134;
+        --accent-glow: rgba(242, 177, 52, 0.4);
+        --soft-bg: #f8fafc;
+        --text-main: #1e293b;
+        --text-muted: #64748b;
+        --white: #ffffff;
+        --glass: rgba(255, 255, 255, 0.03);
+        --border-color: #e2e8f0;
+        --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
+          0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      }
 
-    * {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
+      * {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
 
-    html {
-      scroll-behavior: smooth;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    body {
-      color: var(--text-main);
-      background-color: var(--white);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+      body {
+        color: var(--text-main);
+        background-color: var(--white);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
 
-    /* --- Navigation --- */
-    .navbar {
-      background: rgba(15, 23, 58, 0.85);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 1rem 0;
-      transition: all 0.3s ease;
-    }
+      /* --- Navigation --- */
+      .navbar {
+        background: rgba(15, 23, 58, 0.85);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+      }
 
-    .navbar-brand {
-      font-size: 1.25rem;
-      letter-spacing: -0.02em;
-    }
+      .navbar-brand {
+        font-size: 1.25rem;
+        letter-spacing: -0.02em;
+      }
 
-    .nav-link {
-      font-weight: 500;
-      font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.8) !important;
-      transition: color 0.2s ease;
-      padding: 0.5rem 1rem !important;
-    }
+      .nav-link {
+        font-weight: 500;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.8) !important;
+        transition: color 0.2s ease;
+        padding: 0.5rem 1rem !important;
+      }
 
-    .nav-link:hover, .nav-link.active {
-      color: var(--accent) !important;
-    }
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--accent) !important;
+      }
 
-    /* --- Hero Section --- */
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 120px 0 80px;
-      color: var(--white);
-      background: 
-        radial-gradient(circle at 80% 20%, rgba(107, 44, 145, 0.4) 0%, transparent 40%),
-        radial-gradient(circle at 10% 80%, rgba(31, 47, 111, 0.4) 0%, transparent 40%),
-        linear-gradient(135deg, #0f173a 0%, #1f2f6f 100%);
-      overflow: hidden;
-    }
+      /* --- Hero Section --- */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 120px 0 80px;
+        color: var(--white);
+        background: radial-gradient(
+            circle at 80% 20%,
+            rgba(107, 44, 145, 0.4) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 10% 80%,
+            rgba(31, 47, 111, 0.4) 0%,
+            transparent 40%
+          ),
+          linear-gradient(135deg, #0f173a 0%, #1f2f6f 100%);
+        overflow: hidden;
+      }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-      background-size: 30px 30px;
-      opacity: 0.3;
-    }
+      .hero::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: radial-gradient(
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 1px
+        );
+        background-size: 30px 30px;
+        opacity: 0.3;
+      }
 
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.6rem 1.2rem;
-      background: rgba(242, 177, 52, 0.1);
-      border: 1px solid rgba(242, 177, 52, 0.3);
-      color: var(--accent);
-      border-radius: 100px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 2rem;
-      animation: fadeInDown 0.8s ease-out;
-    }
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.6rem 1.2rem;
+        background: rgba(242, 177, 52, 0.1);
+        border: 1px solid rgba(242, 177, 52, 0.3);
+        color: var(--accent);
+        border-radius: 100px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 2rem;
+        animation: fadeInDown 0.8s ease-out;
+      }
 
-    .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.2rem);
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-      letter-spacing: -0.03em;
-      background: linear-gradient(to right, #ffffff, #cbd5e1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+      .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4.2rem);
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.03em;
+        background: linear-gradient(to right, #ffffff, #cbd5e1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-    .hero .lead {
-      color: #94a3b8;
-      max-width: 700px;
-      font-size: 1.15rem;
-      margin-bottom: 2.5rem;
-    }
+      .hero .lead {
+        color: #94a3b8;
+        max-width: 700px;
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+      }
 
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
 
-    .hero-meta span {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 0.75rem 1.25rem;
-      border-radius: 12px;
-      font-size: 0.9rem;
-      backdrop-filter: blur(5px);
-      display: flex;
-      align-items: center;
-      transition: all 0.3s ease;
-    }
+      .hero-meta span {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.75rem 1.25rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
 
-    .hero-meta span:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
-    }
+      .hero-meta span:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
 
-    /* --- Sections --- */
-    .section {
-      padding: 100px 0;
-    }
+      /* --- Sections --- */
+      .section {
+        padding: 100px 0;
+      }
 
-    .section-soft {
-      background-color: var(--soft-bg);
-    }
+      .section-soft {
+        background-color: var(--soft-bg);
+      }
 
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--primary-deep);
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
-    }
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--primary-deep);
+        margin-bottom: 1rem;
+        letter-spacing: -0.02em;
+      }
 
-    .section-subtitle {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 650px;
-      margin-bottom: 4rem;
-    }
+      .section-subtitle {
+        color: var(--text-muted);
+        font-size: 1.1rem;
+        max-width: 650px;
+        margin-bottom: 4rem;
+      }
 
-    /* --- Cards --- */
-    .card-clean {
-      background: var(--white);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 2.5rem;
-      height: 100%;
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-      position: relative;
-      overflow: hidden;
-    }
+      /* --- Cards --- */
+      .card-clean {
+        background: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: 24px;
+        padding: 2.5rem;
+        height: 100%;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        position: relative;
+        overflow: hidden;
+      }
 
-    .card-clean:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.12);
-      border-color: var(--primary-light);
-    }
+      .card-clean:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.12);
+        border-color: var(--primary-light);
+      }
 
-    .icon-box {
-      width: 60px;
-      height: 60px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(31, 47, 111, 0.08), rgba(107, 44, 145, 0.08));
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      transition: all 0.3s ease;
-    }
+      .icon-box {
+        width: 60px;
+        height: 60px;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(31, 47, 111, 0.08),
+          rgba(107, 44, 145, 0.08)
+        );
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+      }
 
-    .card-clean:hover .icon-box {
-      background: var(--primary);
-      color: var(--white);
-      transform: scale(1.1);
-    }
+      .card-clean:hover .icon-box {
+        background: var(--primary);
+        color: var(--white);
+        transform: scale(1.1);
+      }
 
-    .card-clean h5 {
-      font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--primary-deep);
-    }
+      .card-clean h5 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--primary-deep);
+      }
 
-    /* --- Programme & Schedule --- */
-    .programme-day {
-      padding: 2rem;
-      background: var(--white);
-      border-radius: 24px;
-      border: 1px solid var(--border-color);
-      height: 100%;
-      box-shadow: var(--card-shadow);
-      transition: border-color 0.3s ease;
-    }
+      /* --- Programme & Schedule --- */
+      .programme-day {
+        padding: 2rem;
+        background: var(--white);
+        border-radius: 24px;
+        border: 1px solid var(--border-color);
+        height: 100%;
+        box-shadow: var(--card-shadow);
+        transition: border-color 0.3s ease;
+      }
 
-    .programme-day:hover {
-      border-color: var(--accent);
-    }
+      .programme-day:hover {
+        border-color: var(--accent);
+      }
 
-    .event-pill {
-      display: inline-block;
-      padding: 0.4rem 1rem;
-      background: var(--accent);
-      color: var(--primary-deep);
-      font-weight: 800;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      border-radius: 100px;
-      margin-bottom: 1.25rem;
-    }
+      .event-pill {
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        background: var(--accent);
+        color: var(--primary-deep);
+        font-weight: 800;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        border-radius: 100px;
+        margin-bottom: 1.25rem;
+      }
 
-    .schedule-table-wrapper {
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: var(--card-shadow);
-      border: 1px solid var(--border-color);
-    }
+      .schedule-table-wrapper {
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        border: 1px solid var(--border-color);
+      }
 
-    .table {
-      margin-bottom: 0;
-    }
+      .table {
+        margin-bottom: 0;
+      }
 
-    .table thead th {
-      background: var(--primary-deep);
-      color: var(--white);
-      padding: 1.5rem;
-      font-weight: 600;
-      border: none;
-    }
+      .table thead th {
+        background: var(--primary-deep);
+        color: var(--white);
+        padding: 1.5rem;
+        font-weight: 600;
+        border: none;
+      }
 
-    .table tbody td {
-      padding: 1.25rem 1.5rem;
-      vertical-align: middle;
-      border-bottom: 1px solid var(--border-color);
-    }
+      .table tbody td {
+        padding: 1.25rem 1.5rem;
+        vertical-align: middle;
+        border-bottom: 1px solid var(--border-color);
+      }
 
-    .badge-category {
-      padding: 0.5rem 1rem;
-      border-radius: 100px;
-      font-weight: 700;
-      font-size: 0.75rem;
-    }
+      .badge-category {
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
 
-    .badge-workshop { background: #dcfce7; color: #166534; }
-    .badge-competition { background: #f3e8ff; color: #6b21a8; }
-    .badge-official { background: #fef9c3; color: #854d0e; }
-    .badge-general { background: #f1f5f9; color: #475569; }
+      .badge-workshop {
+        background: #dcfce7;
+        color: #166534;
+      }
+      .badge-competition {
+        background: #f3e8ff;
+        color: #6b21a8;
+      }
+      .badge-official {
+        background: #fef9c3;
+        color: #854d0e;
+      }
+      .badge-general {
+        background: #f1f5f9;
+        color: #475569;
+      }
 
-    /* --- Stats & Misc --- */
-    .stats-box {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 24px;
-      padding: 2rem;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
+      /* --- Stats & Misc --- */
+      .stats-box {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
 
-    .stats-box:hover {
-      background: rgba(255, 255, 255, 0.12);
-      transform: translateY(-5px);
-    }
+      .stats-box:hover {
+        background: rgba(255, 255, 255, 0.12);
+        transform: translateY(-5px);
+      }
 
-    .stats-box h3 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      color: var(--accent);
-    }
+      .stats-box h3 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        color: var(--accent);
+      }
 
-    .map-placeholder, .gallery-placeholder {
-      border-radius: 24px;
-      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-      border: 2px dashed #cbd5e1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      text-align: center;
-      min-height: 300px;
-    }
+      .map-placeholder,
+      .gallery-placeholder {
+        border-radius: 24px;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border: 2px dashed #cbd5e1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        color: var(--text-muted);
+        font-weight: 600;
+        text-align: center;
+        min-height: 300px;
+      }
 
-    .contact-strip {
-      background: linear-gradient(135deg, var(--primary-deep) 0%, var(--primary) 100%);
-      color: var(--white);
-      border-radius: 32px;
-      padding: 4rem;
-      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
-    }
+      .contact-strip {
+        background: linear-gradient(
+          135deg,
+          var(--primary-deep) 0%,
+          var(--primary) 100%
+        );
+        color: var(--white);
+        border-radius: 32px;
+        padding: 4rem;
+        box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+      }
 
-    .contact-info-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 1.5rem;
-      height: 100%;
-      transition: background 0.3s ease;
-    }
+      .contact-info-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 1.5rem;
+        height: 100%;
+        transition: background 0.3s ease;
+      }
 
-    .contact-info-card:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
+      .contact-info-card:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
 
-    /* --- Footer --- */
-    footer {
-      background: var(--primary-deep);
-      color: #94a3b8;
-      padding: 4rem 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-    }
+      /* --- Footer --- */
+      footer {
+        background: var(--primary-deep);
+        color: #94a3b8;
+        padding: 4rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
 
-    footer strong {
-      color: var(--white);
-    }
+      footer strong {
+        color: var(--white);
+      }
 
-    footer a {
-      color: #94a3b8;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
+      footer a {
+        color: #94a3b8;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
 
-    footer a:hover {
-      color: var(--accent);
-    }
+      footer a:hover {
+        color: var(--accent);
+      }
 
-    /* --- Animations --- */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+      /* --- Animations --- */
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-    .btn-warning {
-      background-color: var(--accent);
-      border: none;
-      color: var(--primary-deep);
-      box-shadow: 0 4px 15px var(--accent-glow);
-    }
+      .btn-warning {
+        background-color: var(--accent);
+        border: none;
+        color: var(--primary-deep);
+        box-shadow: 0 4px 15px var(--accent-glow);
+      }
 
-    .btn-warning:hover {
-      background-color: #eab308;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px var(--accent-glow);
-    }
+      .btn-warning:hover {
+        background-color: #eab308;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px var(--accent-glow);
+      }
 
-    .btn-lg {
-      padding: 1rem 2rem;
-      font-weight: 700;
-    }
+      .btn-lg {
+        padding: 1rem 2rem;
+        font-weight: 700;
+      }
 
-    @media (max-width: 991.98px) {
-      .hero { padding-top: 100px; text-align: center; }
-      .hero-meta { justify-content: center; }
-      .contact-strip { padding: 2.5rem; }
-      .section { padding: 60px 0; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">
-        <span style="color: var(--accent);">Math & Net</span> Mashup 2026
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
-          <li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
-          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="#committee">Committee</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-lg-3">
-            <a class="btn btn-warning rounded-pill px-4 fw-bold" href="#register">Register</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="container position-relative">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-7">
-          <span class="hero-badge"><i class="bi bi-star-fill me-2"></i> UiTM Perlis Faculty Event</span>
-          <h1>Math & Net <br>Mashup Day 2026</h1>
-          <p class="fs-5 fw-medium text-info mb-3">Mathematics • Computing • Creativity • Community</p>
-          <p class="lead">
-            Join us for a vibrant faculty festival that brings together students, staff, alumni,
-            and the wider community through competitions, workshops, talks, exhibitions,
-            games, and engaging activities.
-          </p>
-          <div class="hero-meta mb-5">
-            <span><i class="bi bi-calendar3 me-2 text-warning"></i> 20-22 October 2026</span>
-            <span><i class="bi bi-geo-alt-fill me-2 text-warning"></i> UiTM Cawangan Perlis</span>
-            <span><i class="bi bi-building me-2 text-warning"></i> FSKM</span>
-          </div>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="#programme" class="btn btn-light btn-lg rounded-pill">View Programme</a>
-            <a href="#register" class="btn btn-warning btn-lg rounded-pill">Register Now</a>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="row g-4">
-            <div class="col-6 col-lg-12">
-              <div class="stats-box">
-                <h3>3</h3>
-                <p class="mb-0 text-white-50">Days of Activities</p>
-              </div>
-            </div>
-            <div class="col-6 col-lg-12">
-              <div class="stats-box">
-                <h3>6+</h3>
-                <p class="mb-0 text-white-50">Activity Categories</p>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="stats-box bg-primary-light">
-                <h3 class="text-white">#1</h3>
-                <p class="mb-0 text-white-50">Campus-wide Celebration of Learning and Talent</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Highlights Section -->
-  <section id="highlights" class="section section-soft">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">What to Expect</h2>
-        <p class="section-subtitle mx-auto">
-          A balanced mix of academic, creative, social, and community-centred activities.
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-laptop"></i></div>
-            <h5>Interactive Workshops</h5>
-            <p class="text-muted mb-0 small">Hands-on sessions in digital tools, computing, editing, and practical skills.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-trophy"></i></div>
-            <h5>Competitions and Games</h5>
-            <p class="text-muted mb-0 small">Exciting challenges that test creativity, teamwork, logic, and confidence.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-mic"></i></div>
-            <h5>Talks and Sharing</h5>
-            <p class="text-muted mb-0 small">Sessions with invited speakers, alumni, academics, and industry contributors.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-cpu"></i></div>
-            <h5>Technology Showcase</h5>
-            <p class="text-muted mb-0 small">Student work, digital ideas, projects, and creative demonstrations in one space.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-people"></i></div>
-            <h5>Community Activities</h5>
-            <p class="text-muted mb-0 small">Open and engaging activities that connect the faculty with schools and visitors.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean">
-            <div class="icon-box"><i class="bi bi-shop"></i></div>
-            <h5>Booths and Exhibitions</h5>
-            <p class="text-muted mb-0 small">Entrepreneurship booths, partner exhibits, and lively supporting event spaces.</p>
-          </div>
+      @media (max-width: 991.98px) {
+        .hero {
+          padding-top: 100px;
+          text-align: center;
+        }
+        .hero-meta {
+          justify-content: center;
+        }
+        .contact-strip {
+          padding: 2.5rem;
+        }
+        .section {
+          padding: 60px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span style="color: var(--accent)">Math & Net</span> Mashup 2026
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#highlights">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programme">Programme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#committee">Committee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn btn-warning rounded-pill px-4 fw-bold"
+                href="#register"
+                >Register</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="section-title">About the Event</h2>
-          <p class="section-subtitle">
-            A faculty festival that celebrates mathematics, computing, innovation, creativity, and community spirit.
-          </p>
-          <div class="pe-lg-5">
-            <p>
-              Math & Net Mashup Day 2026 is a faculty-wide programme designed to bring together
-              students, staff, alumni, schools, and the wider community through meaningful and
-              enjoyable activities.
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <!--           <span class="hero-badge"><i class="bi bi-star-fill me-2"></i> UiTM Perlis Faculty Event</span> -->
+            <h1>Math & Net <br />Mashup Day 2026</h1>
+            <p class="fs-5 fw-medium text-info mb-3">
+              Mathematics • Computing • Creativity • Community
             </p>
-            <p>
-              It combines academic engagement, digital creativity, competition, networking, and fun in one shared campus experience. By creating a lively and inclusive environment, the event aims to make learning more engaging while strengthening relationships within and beyond the faculty.
+            <p class="lead">
+              Join us for a vibrant faculty festival that brings together
+              students, staff, alumni, and the wider community through
+              competitions, workshops, talks, exhibitions, games, and engaging
+              activities.
             </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card-clean" style="background: var(--soft-bg);">
-            <h4 class="mb-4 d-flex align-items-center">
-              <span class="badge bg-primary me-2">!</span> Objectives
-            </h4>
-            <ul class="list-unstyled">
-              <li class="mb-3 d-flex align-items-start">
-                <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                <span>Strengthen community spirit among students, staff, alumni, and external participants.</span>
-              </li>
-              <li class="mb-3 d-flex align-items-start">
-                <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                <span>Encourage active learning through mathematics, computing, digital creativity, and innovation-based activities.</span>
-              </li>
-              <li class="mb-3 d-flex align-items-start">
-                <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                <span>Provide opportunities for competition, talent development, and confident participation.</span>
-              </li>
-              <li class="mb-3 d-flex align-items-start">
-                <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                <span>Promote networking, knowledge sharing, and exposure to real-world skills.</span>
-              </li>
-              <li class="mb-0 d-flex align-items-start">
-                <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                <span>Create a fun, inclusive, and memorable faculty event experience.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Programme Overview -->
-  <section id="programme" class="section section-soft">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">Programme Overview</h2>
-        <p class="section-subtitle mx-auto">
-          A suggested day-by-day structure for the 2026 edition.
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="programme-day">
-            <span class="event-pill">Day 1</span>
-            <h5>Opening & Learning</h5>
-            <ul class="text-muted small ps-3">
-              <li class="mb-2">Registration and welcoming session</li>
-              <li class="mb-2">Opening ceremony</li>
-              <li class="mb-2">Workshops and short courses</li>
-              <li class="mb-2">Technology and digital creativity sessions</li>
-              <li>Exhibition and booth activities</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="programme-day">
-            <span class="event-pill">Day 2</span>
-            <h5>Competitions & Engagement</h5>
-            <ul class="text-muted small ps-3">
-              <li class="mb-2">Academic and fun competitions</li>
-              <li class="mb-2">Interactive games and challenge-based activities</li>
-              <li class="mb-2">Community participation events</li>
-              <li class="mb-2">Student showcase sessions</li>
-              <li>Sales booths and networking activities</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="programme-day">
-            <span class="event-pill">Day 3</span>
-            <h5>Talks & Closing</h5>
-            <ul class="text-muted small ps-3">
-              <li class="mb-2">Motivational or professional sharing sessions</li>
-              <li class="mb-2">Alumni or industry talk</li>
-              <li class="mb-2">Final activities and prize presentation</li>
-              <li class="mb-2">Closing ceremony</li>
-              <li>Photography and appreciation session</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Events -->
-  <section id="events" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Featured Events</h2>
-      <p class="section-subtitle text-center mx-auto mb-5">Explore the core components of our mashup day.</p>
-      <div class="row g-4">
-        <!-- Re-using card-clean style -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Workshops and Short Courses</h5>
-            <p class="small text-muted mb-3">Hands-on sessions that introduce practical skills in digital tools, computing, media, or academic enrichment.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: Students & Staff</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Competitions and Challenges</h5>
-            <p class="small text-muted mb-3">A range of exciting activities that test knowledge, creativity, teamwork, and problem-solving.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: Schools & Students</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Talks and Sharing Sessions</h5>
-            <p class="small text-muted mb-3">Invited speakers from academia, industry, or alumni networks share inspiring and practical insights.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: All Guests</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Technology Showcase</h5>
-            <p class="small text-muted mb-3">An open space for projects, digital content, ideas, innovations, and student work.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: Public & Schools</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Community Activities</h5>
-            <p class="small text-muted mb-3">Accessible and engaging sessions designed to strengthen faculty-community connections.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: Public Visitors</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card-clean shadow-sm">
-            <h5>Booths and Exhibitions</h5>
-            <p class="small text-muted mb-3">A lively area for student entrepreneurship, partner promotion, and event-side experiences.</p>
-            <div class="pt-3 border-top mt-auto">
-              <small class="text-primary fw-bold">Target: All Visitors</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Registration -->
-  <section id="register" class="section section-soft">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <div class="card-clean p-lg-5">
-            <h2 class="section-title mb-4">Registration</h2>
-            <p class="mb-4">
-              Be part of Math & Net Mashup Day 2026 by joining our activities, competitions,
-              workshops, and community programmes.
-            </p>
-            <div class="row g-3 mb-4">
-              <div class="col-sm-6">
-                <ul class="list-unstyled small">
-                  <li class="mb-2"><i class="bi bi-info-circle me-2 text-primary"></i> Selected categories apply</li>
-                  <li><i class="bi bi-info-circle me-2 text-primary"></i> Early registration required</li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul class="list-unstyled small">
-                  <li class="mb-2"><i class="bi bi-info-circle me-2 text-primary"></i> Limited slots for workshops</li>
-                  <li><i class="bi bi-info-circle me-2 text-primary"></i> Open access for exhibitions</li>
-                </ul>
-              </div>
+            <div class="hero-meta mb-5">
+              <span
+                ><i class="bi bi-calendar3 me-2 text-warning"></i> 20-22 October
+                2026</span
+              >
+              <span
+                ><i class="bi bi-geo-alt-fill me-2 text-warning"></i> UiTM
+                Cawangan Perlis</span
+              >
+              <span><i class="bi bi-building me-2 text-warning"></i> FSKM</span>
             </div>
             <div class="d-flex flex-wrap gap-3">
-              <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Registration Form</a>
-              <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2">Programme Booklet</a>
+              <a href="#programme" class="btn btn-light btn-lg rounded-pill"
+                >View Programme</a
+              >
+              <a href="#register" class="btn btn-warning btn-lg rounded-pill"
+                >Register Now</a
+              >
             </div>
           </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="contact-strip h-100 d-flex flex-column justify-content-center py-5">
-            <h4 class="fw-bold mb-4 text-warning">Who Should Join?</h4>
-            <div class="row g-3">
-              <div class="col-6">
-                <ul class="list-unstyled small ps-2">
-                  <li class="mb-3">• UiTM Students</li>
-                  <li class="mb-3">• Staff Members</li>
-                  <li>• Alumni</li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="list-unstyled small ps-2">
-                  <li class="mb-3">• School Students</li>
-                  <li class="mb-3">• Community</li>
-                  <li>• Partners</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Schedule Table -->
-  <section id="schedule" class="section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">Tentative Schedule</h2>
-        <p class="section-subtitle mx-auto">Sample layout for the final event timetable.</p>
-      </div>
-      <div class="schedule-table-wrapper table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Time</th>
-              <th>Activity</th>
-              <th>Venue</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="fw-bold">8:00 AM - 9:00 AM</td>
-              <td>Registration</td>
-              <td>Main Foyer</td>
-              <td><span class="badge-category badge-general">General</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">9:00 AM - 10:00 AM</td>
-              <td>Opening Ceremony</td>
-              <td>Main Hall</td>
-              <td><span class="badge-category badge-official">Official</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">10:30 AM - 12:30 PM</td>
-              <td>Workshop Session</td>
-              <td>Computer Lab / Seminar Room</td>
-              <td><span class="badge-category badge-workshop">Workshop</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">2:00 PM - 4:00 PM</td>
-              <td>Competition Activities</td>
-              <td>Assigned Venue</td>
-              <td><span class="badge-category badge-competition">Competition</span></td>
-            </tr>
-            <tr>
-              <td class="fw-bold">4:30 PM - 5:30 PM</td>
-              <td>Talk or Sharing Session</td>
-              <td>Mini Auditorium</td>
-              <td><span class="badge-category badge-general">Session</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Venue & Map -->
-  <section id="venue" class="section section-soft">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="section-title">Venue & Event Map</h2>
-          <p class="mb-4">
-            Math & Net Mashup Day 2026 will take place across selected activity zones around
-            UiTM Perlis.
-          </p>
-          <div class="row g-3">
-            <div class="col-6">
-              <ul class="list-unstyled small">
-                <li class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Main Hall</li>
-                <li class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Workshop Rooms</li>
-                <li><i class="bi bi-geo-alt text-primary me-2"></i> Exhibition Zone</li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul class="list-unstyled small">
-                <li class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Competition Area</li>
-                <li class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Surau / Rest Area</li>
-                <li><i class="bi bi-geo-alt text-primary me-2"></i> Parking Area</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="map-placeholder">
-            <div class="text-center">
-              <i class="bi bi-map fs-1 mb-3 d-block"></i>
-              Official 2026 Event Map Placeholder
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Committee & Sponsors -->
-  <section id="committee" class="section">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card-clean">
-            <h2 class="section-title fs-3 mb-4">Organising Committee</h2>
-            <p class="small text-muted mb-4">Made possible through the dedication of FSKM staff and volunteers.</p>
-            <div class="row g-2">
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Patron</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Advisor</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Programme Director</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Deputy Director</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Secretary</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary mb-2">Treasurer</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary">Bureau Heads</small></div>
-              <div class="col-6"><small class="d-block py-1 px-2 border-start border-primary">Student Volunteers</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card-clean">
-            <h2 class="section-title fs-3 mb-4">Sponsors & Partners</h2>
-            <p class="small text-muted mb-4">We welcome strategic support from our industry partners.</p>
-            <div class="row g-3">
-              <div class="col-6">
-                <div class="p-3 border rounded-3 text-center bg-light">
-                  <small class="fw-bold d-block">Main Sponsor</small>
-                  <span class="text-muted small">Placeholder</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="p-3 border rounded-3 text-center bg-light">
-                  <small class="fw-bold d-block">Gold Sponsor</small>
-                  <span class="text-muted small">Placeholder</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="p-3 border rounded-3 text-center bg-light">
-                  <small class="fw-bold d-block">Silver Sponsor</small>
-                  <span class="text-muted small">Placeholder</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="p-3 border rounded-3 text-center bg-light">
-                  <small class="fw-bold d-block">Event Partner</small>
-                  <span class="text-muted small">Placeholder</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="section section-soft">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5">
-          <h2 class="section-title">Gallery</h2>
-          <p class="mb-4 text-muted">
-            Share the highlights, moments, and memories captured throughout Math & Net Mashup Day.
-          </p>
-          <div class="d-flex flex-wrap gap-2">
-            <a href="#" class="btn btn-primary rounded-pill px-4">Photo Gallery</a>
-            <a href="#" class="btn btn-outline-primary rounded-pill px-4">Facebook Album</a>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="gallery-placeholder">
-            <div>
-              <i class="bi bi-images fs-1 mb-2 d-block"></i>
-              Event Gallery Preview Area
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-strip">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-7">
-            <h2 class="fw-bold mb-3">Get in Touch</h2>
-            <p class="mb-5 text-white-50">
-              For enquiries, collaborations, sponsorship, or participation details, please contact the organising team.
-            </p>
+          <div class="col-lg-5">
             <div class="row g-4">
-              <div class="col-md-6">
-                <div class="contact-info-card">
-                  <small class="text-warning d-block mb-1 text-uppercase fw-bold" style="font-size: 0.7rem;">Email Address</small>
-                  <strong class="d-block">mathnetmashup@uitm.edu.my</strong>
+              <div class="col-6 col-lg-12">
+                <div class="stats-box">
+                  <h3>3</h3>
+                  <p class="mb-0 text-white-50">Days of Activities</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="contact-info-card">
-                  <small class="text-warning d-block mb-1 text-uppercase fw-bold" style="font-size: 0.7rem;">Phone / WhatsApp</small>
-                  <strong class="d-block">+60 12-345 6789</strong>
+              <div class="col-6 col-lg-12">
+                <div class="stats-box">
+                  <h3>6+</h3>
+                  <p class="mb-0 text-white-50">Activity Categories</p>
                 </div>
               </div>
               <div class="col-12">
-                <div class="contact-info-card">
-                  <small class="text-warning d-block mb-1 text-uppercase fw-bold" style="font-size: 0.7rem;">Organiser</small>
-                  <strong class="d-block">FSKM, UiTM Cawangan Perlis</strong>
+                <div class="stats-box bg-primary-light">
+                  <h3 class="text-white">#1</h3>
+                  <p class="mb-0 text-white-50">
+                    Campus-wide Celebration of Learning and Talent
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 text-center text-lg-end">
-            <a href="#home" class="btn btn-warning btn-lg rounded-pill px-5">
-              <i class="bi bi-arrow-up me-2"></i> Back to Top
-            </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section section-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">What to Expect</h2>
+          <p class="section-subtitle mx-auto">
+            A balanced mix of academic, creative, social, and community-centred
+            activities.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-laptop"></i></div>
+              <h5>Interactive Workshops</h5>
+              <p class="text-muted mb-0 small">
+                Hands-on sessions in digital tools, computing, editing, and
+                practical skills.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-trophy"></i></div>
+              <h5>Competitions and Games</h5>
+              <p class="text-muted mb-0 small">
+                Exciting challenges that test creativity, teamwork, logic, and
+                confidence.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-mic"></i></div>
+              <h5>Talks and Sharing</h5>
+              <p class="text-muted mb-0 small">
+                Sessions with invited speakers, alumni, academics, and industry
+                contributors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-cpu"></i></div>
+              <h5>Technology Showcase</h5>
+              <p class="text-muted mb-0 small">
+                Student work, digital ideas, projects, and creative
+                demonstrations in one space.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-people"></i></div>
+              <h5>Community Activities</h5>
+              <p class="text-muted mb-0 small">
+                Open and engaging activities that connect the faculty with
+                schools and visitors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean">
+              <div class="icon-box"><i class="bi bi-shop"></i></div>
+              <h5>Booths and Exhibitions</h5>
+              <p class="text-muted mb-0 small">
+                Entrepreneurship booths, partner exhibits, and lively supporting
+                event spaces.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <strong class="fs-5 d-block mb-2">Math & Net Mashup Day 2026</strong>
-          <p class="small mb-0">Fakulti Sains Komputer dan Matematik (FSKM)<br>UiTM Cawangan Perlis, Arau, Perlis.</p>
-        </div>
-        <div class="col-lg-6 text-lg-end">
-          <div class="mb-3">
-            <a href="#home" class="mx-2">Home</a>
-            <a href="#programme" class="mx-2">Programme</a>
-            <a href="#contact" class="mx-2">Contact</a>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title">About the Event</h2>
+            <p class="section-subtitle">
+              A faculty festival that celebrates mathematics, computing,
+              innovation, creativity, and community spirit.
+            </p>
+            <div class="pe-lg-5">
+              <p>
+                Math & Net Mashup Day 2026 is a faculty-wide programme designed
+                to bring together students, staff, alumni, schools, and the
+                wider community through meaningful and enjoyable activities.
+              </p>
+              <p>
+                It combines academic engagement, digital creativity,
+                competition, networking, and fun in one shared campus
+                experience. By creating a lively and inclusive environment, the
+                event aims to make learning more engaging while strengthening
+                relationships within and beyond the faculty.
+              </p>
+            </div>
           </div>
-          <p class="small mb-0">© 2026 UiTM Perlis. All Rights Reserved.</p>
+          <div class="col-lg-6">
+            <div class="card-clean" style="background: var(--soft-bg)">
+              <h4 class="mb-4 d-flex align-items-center">
+                <span class="badge bg-primary me-2">!</span> Objectives
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
+                  <span
+                    >Strengthen community spirit among students, staff, alumni,
+                    and external participants.</span
+                  >
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
+                  <span
+                    >Encourage active learning through mathematics, computing,
+                    digital creativity, and innovation-based activities.</span
+                  >
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
+                  <span
+                    >Provide opportunities for competition, talent development,
+                    and confident participation.</span
+                  >
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
+                  <span
+                    >Promote networking, knowledge sharing, and exposure to
+                    real-world skills.</span
+                  >
+                </li>
+                <li class="mb-0 d-flex align-items-start">
+                  <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
+                  <span
+                    >Create a fun, inclusive, and memorable faculty event
+                    experience.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Smooth scrolling & handle mobile menu collapse
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const navbarCollapse = document.getElementById('mainNav');
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-        if (bsCollapse) {
-          bsCollapse.hide();
+    <!-- Programme Overview -->
+    <section id="programme" class="section section-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Programme Overview</h2>
+          <p class="section-subtitle mx-auto">
+            A suggested day-by-day structure for the 2026 edition.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="programme-day">
+              <span class="event-pill">Day 1</span>
+              <h5>Opening & Learning</h5>
+              <ul class="text-muted small ps-3">
+                <li class="mb-2">Registration and welcoming session</li>
+                <li class="mb-2">Opening ceremony</li>
+                <li class="mb-2">Workshops and short courses</li>
+                <li class="mb-2">Technology and digital creativity sessions</li>
+                <li>Exhibition and booth activities</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="programme-day">
+              <span class="event-pill">Day 2</span>
+              <h5>Competitions & Engagement</h5>
+              <ul class="text-muted small ps-3">
+                <li class="mb-2">Academic and fun competitions</li>
+                <li class="mb-2">
+                  Interactive games and challenge-based activities
+                </li>
+                <li class="mb-2">Community participation events</li>
+                <li class="mb-2">Student showcase sessions</li>
+                <li>Sales booths and networking activities</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="programme-day">
+              <span class="event-pill">Day 3</span>
+              <h5>Talks & Closing</h5>
+              <ul class="text-muted small ps-3">
+                <li class="mb-2">
+                  Motivational or professional sharing sessions
+                </li>
+                <li class="mb-2">Alumni or industry talk</li>
+                <li class="mb-2">Final activities and prize presentation</li>
+                <li class="mb-2">Closing ceremony</li>
+                <li>Photography and appreciation session</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section id="events" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Featured Events</h2>
+        <p class="section-subtitle text-center mx-auto mb-5">
+          Explore the core components of our mashup day.
+        </p>
+        <div class="row g-4">
+          <!-- Re-using card-clean style -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Workshops and Short Courses</h5>
+              <p class="small text-muted mb-3">
+                Hands-on sessions that introduce practical skills in digital
+                tools, computing, media, or academic enrichment.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold"
+                  >Target: Students & Staff</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Competitions and Challenges</h5>
+              <p class="small text-muted mb-3">
+                A range of exciting activities that test knowledge, creativity,
+                teamwork, and problem-solving.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold"
+                  >Target: Schools & Students</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Talks and Sharing Sessions</h5>
+              <p class="small text-muted mb-3">
+                Invited speakers from academia, industry, or alumni networks
+                share inspiring and practical insights.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold">Target: All Guests</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Technology Showcase</h5>
+              <p class="small text-muted mb-3">
+                An open space for projects, digital content, ideas, innovations,
+                and student work.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold"
+                  >Target: Public & Schools</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Community Activities</h5>
+              <p class="small text-muted mb-3">
+                Accessible and engaging sessions designed to strengthen
+                faculty-community connections.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold"
+                  >Target: Public Visitors</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-clean shadow-sm">
+              <h5>Booths and Exhibitions</h5>
+              <p class="small text-muted mb-3">
+                A lively area for student entrepreneurship, partner promotion,
+                and event-side experiences.
+              </p>
+              <div class="pt-3 border-top mt-auto">
+                <small class="text-primary fw-bold">Target: All Visitors</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" class="section section-soft">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="card-clean p-lg-5">
+              <h2 class="section-title mb-4">Registration</h2>
+              <p class="mb-4">
+                Be part of Math & Net Mashup Day 2026 by joining our activities,
+                competitions, workshops, and community programmes.
+              </p>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled small">
+                    <li class="mb-2">
+                      <i class="bi bi-info-circle me-2 text-primary"></i>
+                      Selected categories apply
+                    </li>
+                    <li>
+                      <i class="bi bi-info-circle me-2 text-primary"></i> Early
+                      registration required
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled small">
+                    <li class="mb-2">
+                      <i class="bi bi-info-circle me-2 text-primary"></i>
+                      Limited slots for workshops
+                    </li>
+                    <li>
+                      <i class="bi bi-info-circle me-2 text-primary"></i> Open
+                      access for exhibitions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2"
+                  >Registration Form</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-outline-primary rounded-pill px-4 py-2"
+                  >Programme Booklet</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="contact-strip h-100 d-flex flex-column justify-content-center py-5"
+            >
+              <h4 class="fw-bold mb-4 text-warning">Who Should Join?</h4>
+              <div class="row g-3">
+                <div class="col-6">
+                  <ul class="list-unstyled small ps-2">
+                    <li class="mb-3">• UiTM Students</li>
+                    <li class="mb-3">• Staff Members</li>
+                    <li>• Alumni</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled small ps-2">
+                    <li class="mb-3">• School Students</li>
+                    <li class="mb-3">• Community</li>
+                    <li>• Partners</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Table -->
+    <section id="schedule" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Tentative Schedule</h2>
+          <p class="section-subtitle mx-auto">
+            Sample layout for the final event timetable.
+          </p>
+        </div>
+        <div class="schedule-table-wrapper table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-bold">8:00 AM - 9:00 AM</td>
+                <td>Registration</td>
+                <td>Main Foyer</td>
+                <td>
+                  <span class="badge-category badge-general">General</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bold">9:00 AM - 10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+                <td>
+                  <span class="badge-category badge-official">Official</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bold">10:30 AM - 12:30 PM</td>
+                <td>Workshop Session</td>
+                <td>Computer Lab / Seminar Room</td>
+                <td>
+                  <span class="badge-category badge-workshop">Workshop</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bold">2:00 PM - 4:00 PM</td>
+                <td>Competition Activities</td>
+                <td>Assigned Venue</td>
+                <td>
+                  <span class="badge-category badge-competition"
+                    >Competition</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bold">4:30 PM - 5:30 PM</td>
+                <td>Talk or Sharing Session</td>
+                <td>Mini Auditorium</td>
+                <td>
+                  <span class="badge-category badge-general">Session</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue & Map -->
+    <section id="venue" class="section section-soft">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title">Venue & Event Map</h2>
+            <p class="mb-4">
+              Math & Net Mashup Day 2026 will take place across selected
+              activity zones around UiTM Perlis.
+            </p>
+            <div class="row g-3">
+              <div class="col-6">
+                <ul class="list-unstyled small">
+                  <li class="mb-2">
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Main Hall
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Workshop
+                    Rooms
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Exhibition
+                    Zone
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled small">
+                  <li class="mb-2">
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Competition
+                    Area
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Surau / Rest
+                    Area
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt text-primary me-2"></i> Parking Area
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-placeholder">
+              <div class="text-center">
+                <i class="bi bi-map fs-1 mb-3 d-block"></i>
+                Official 2026 Event Map Placeholder
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Committee & Sponsors -->
+    <section id="committee" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card-clean">
+              <h2 class="section-title fs-3 mb-4">Organising Committee</h2>
+              <p class="small text-muted mb-4">
+                Made possible through the dedication of FSKM staff and
+                volunteers.
+              </p>
+              <div class="row g-2">
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Patron</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Advisor</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Programme Director</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Deputy Director</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Secretary</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small
+                    class="d-block py-1 px-2 border-start border-primary mb-2"
+                    >Treasurer</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small class="d-block py-1 px-2 border-start border-primary"
+                    >Bureau Heads</small
+                  >
+                </div>
+                <div class="col-6">
+                  <small class="d-block py-1 px-2 border-start border-primary"
+                    >Student Volunteers</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-clean">
+              <h2 class="section-title fs-3 mb-4">Sponsors & Partners</h2>
+              <p class="small text-muted mb-4">
+                We welcome strategic support from our industry partners.
+              </p>
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 border rounded-3 text-center bg-light">
+                    <small class="fw-bold d-block">Main Sponsor</small>
+                    <span class="text-muted small">Placeholder</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-3 text-center bg-light">
+                    <small class="fw-bold d-block">Gold Sponsor</small>
+                    <span class="text-muted small">Placeholder</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-3 text-center bg-light">
+                    <small class="fw-bold d-block">Silver Sponsor</small>
+                    <span class="text-muted small">Placeholder</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border rounded-3 text-center bg-light">
+                    <small class="fw-bold d-block">Event Partner</small>
+                    <span class="text-muted small">Placeholder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section section-soft">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="section-title">Gallery</h2>
+            <p class="mb-4 text-muted">
+              Share the highlights, moments, and memories captured throughout
+              Math & Net Mashup Day.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#" class="btn btn-primary rounded-pill px-4"
+                >Photo Gallery</a
+              >
+              <a href="#" class="btn btn-outline-primary rounded-pill px-4"
+                >Facebook Album</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="gallery-placeholder">
+              <div>
+                <i class="bi bi-images fs-1 mb-2 d-block"></i>
+                Event Gallery Preview Area
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-strip">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+              <h2 class="fw-bold mb-3">Get in Touch</h2>
+              <p class="mb-5 text-white-50">
+                For enquiries, collaborations, sponsorship, or participation
+                details, please contact the organising team.
+              </p>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="contact-info-card">
+                    <small
+                      class="text-warning d-block mb-1 text-uppercase fw-bold"
+                      style="font-size: 0.7rem"
+                      >Email Address</small
+                    >
+                    <strong class="d-block">mathnetmashup@uitm.edu.my</strong>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="contact-info-card">
+                    <small
+                      class="text-warning d-block mb-1 text-uppercase fw-bold"
+                      style="font-size: 0.7rem"
+                      >Phone / WhatsApp</small
+                    >
+                    <strong class="d-block">+60 12-345 6789</strong>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="contact-info-card">
+                    <small
+                      class="text-warning d-block mb-1 text-uppercase fw-bold"
+                      style="font-size: 0.7rem"
+                      >Organiser</small
+                    >
+                    <strong class="d-block">FSKM, UiTM Cawangan Perlis</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end">
+              <a href="#home" class="btn btn-warning btn-lg rounded-pill px-5">
+                <i class="bi bi-arrow-up me-2"></i> Back to Top
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <strong class="fs-5 d-block mb-2"
+              >Math & Net Mashup Day 2026</strong
+            >
+            <p class="small mb-0">
+              Fakulti Sains Komputer dan Matematik (FSKM)<br />UiTM Cawangan
+              Perlis, Arau, Perlis.
+            </p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <div class="mb-3">
+              <a href="#home" class="mx-2">Home</a>
+              <a href="#programme" class="mx-2">Programme</a>
+              <a href="#contact" class="mx-2">Contact</a>
+            </div>
+            <p class="small mb-0">© 2026 UiTM Perlis. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Smooth scrolling & handle mobile menu collapse
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const navbarCollapse = document.getElementById("mainNav");
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        });
+      });
+
+      // Simple scroll spy behavior for navbar styling
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          nav.style.padding = "0.5rem 0";
+          nav.style.background = "rgba(15, 23, 58, 0.95)";
+        } else {
+          nav.style.padding = "1rem 0";
+          nav.style.background = "rgba(15, 23, 58, 0.85)";
         }
       });
-    });
-
-    // Simple scroll spy behavior for navbar styling
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        nav.style.padding = '0.5rem 0';
-        nav.style.background = 'rgba(15, 23, 58, 0.95)';
-      } else {
-        nav.style.padding = '1rem 0';
-        nav.style.background = 'rgba(15, 23, 58, 0.85)';
-      }
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
