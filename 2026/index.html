@@ -9,7 +9,7 @@
       content="Math & Net Mashup Day 2026 at UiTM Perlis. Mathematics, computing, creativity, and community in one vibrant faculty event."
     />
 
-<!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-<link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -26,7 +26,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-<style>
+    <style>
       :root {
         --primary: #1f2f6f;
         --primary-light: #2c418f;
@@ -45,22 +45,22 @@
           0 8px 10px -6px rgba(0, 0, 0, 0.05);
       }
 
-* {
+      * {
         font-family: "Plus Jakarta Sans", sans-serif;
       }
 
-html {
+      html {
         scroll-behavior: smooth;
       }
 
-body {
+      body {
         color: var(--text-main);
         background-color: var(--white);
         line-height: 1.6;
         overflow-x: hidden;
       }
 
-/* --- Navigation --- */
+      /* --- Navigation --- */
       .navbar {
         background: rgba(15, 23, 58, 0.85);
         backdrop-filter: blur(15px);
@@ -70,12 +70,31 @@ body {
         transition: all 0.3s ease;
       }
 
-.navbar-brand {
+      .navbar-brand {
         font-size: 1.25rem;
         letter-spacing: -0.02em;
       }
 
-.nav-link {
+      /* Logo Styles */
+      .navbar-logo {
+        height: 40px;
+        width: auto;
+        margin-right: 12px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .hero-logo {
+        max-width: 140px;
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        animation: fadeInDown 0.8s ease-out;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-link {
         font-weight: 500;
         font-size: 0.95rem;
         color: rgba(255, 255, 255, 0.8) !important;
@@ -83,12 +102,12 @@ body {
         padding: 0.5rem 1rem !important;
       }
 
-.nav-link:hover,
+      .nav-link:hover,
       .nav-link.active {
         color: var(--accent) !important;
       }
 
-/* --- Hero Section --- */
+      /* --- Hero Section --- */
       .hero {
         position: relative;
         min-height: 100vh;
@@ -110,7 +129,7 @@ body {
         overflow: hidden;
       }
 
-.hero::before {
+      .hero::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -125,7 +144,7 @@ body {
         opacity: 0.3;
       }
 
-.hero-badge {
+      .hero-badge {
         display: inline-flex;
         align-items: center;
         padding: 0.6rem 1.2rem;
@@ -141,7 +160,7 @@ body {
         animation: fadeInDown 0.8s ease-out;
       }
 
-.hero h1 {
+      .hero h1 {
         font-size: clamp(2.5rem, 6vw, 4.2rem);
         font-weight: 800;
         line-height: 1.1;
@@ -152,20 +171,20 @@ body {
         -webkit-text-fill-color: transparent;
       }
 
-.hero .lead {
+      .hero .lead {
         color: #94a3b8;
         max-width: 700px;
         font-size: 1.15rem;
         margin-bottom: 2.5rem;
       }
 
-.hero-meta {
+      .hero-meta {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
       }
 
-.hero-meta span {
+      .hero-meta span {
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
         padding: 0.75rem 1.25rem;
@@ -177,21 +196,21 @@ body {
         transition: all 0.3s ease;
       }
 
-.hero-meta span:hover {
+      .hero-meta span:hover {
         background: rgba(255, 255, 255, 0.1);
         transform: translateY(-2px);
       }
 
-/* --- Sections --- */
+      /* --- Sections --- */
       .section {
         padding: 100px 0;
       }
 
-.section-soft {
+      .section-soft {
         background-color: var(--soft-bg);
       }
 
-.section-title {
+      .section-title {
         font-size: 2.5rem;
         font-weight: 800;
         color: var(--primary-deep);
@@ -199,14 +218,14 @@ body {
         letter-spacing: -0.02em;
       }
 
-.section-subtitle {
+      .section-subtitle {
         color: var(--text-muted);
         font-size: 1.1rem;
         max-width: 650px;
         margin-bottom: 4rem;
       }
 
-/* --- Cards --- */
+      /* --- Cards --- */
       .card-clean {
         background: var(--white);
         border: 1px solid var(--border-color);
@@ -218,13 +237,13 @@ body {
         overflow: hidden;
       }
 
-.card-clean:hover {
+      .card-clean:hover {
         transform: translateY(-10px);
         box-shadow: 0 30px 60px -12px rgba(15, 23, 42, 0.12);
         border-color: var(--primary-light);
       }
 
-.icon-box {
+      .icon-box {
         width: 60px;
         height: 60px;
         border-radius: 18px;
@@ -242,19 +261,19 @@ body {
         transition: all 0.3s ease;
       }
 
-.card-clean:hover .icon-box {
+      .card-clean:hover .icon-box {
         background: var(--primary);
         color: var(--white);
         transform: scale(1.1);
       }
 
-.card-clean h5 {
+      .card-clean h5 {
         font-weight: 700;
         margin-bottom: 1rem;
         color: var(--primary-deep);
       }
 
-/* --- Programme & Schedule --- */
+      /* --- Programme & Schedule --- */
       .programme-day {
         padding: 2rem;
         background: var(--white);
@@ -265,11 +284,11 @@ body {
         transition: border-color 0.3s ease;
       }
 
-.programme-day:hover {
+      .programme-day:hover {
         border-color: var(--accent);
       }
 
-.event-pill {
+      .event-pill {
         display: inline-block;
         padding: 0.4rem 1rem;
         background: var(--accent);
@@ -281,18 +300,18 @@ body {
         margin-bottom: 1.25rem;
       }
 
-.schedule-table-wrapper {
+      .schedule-table-wrapper {
         border-radius: 24px;
         overflow: hidden;
         box-shadow: var(--card-shadow);
         border: 1px solid var(--border-color);
       }
 
-.table {
+      .table {
         margin-bottom: 0;
       }
 
-.table thead th {
+      .table thead th {
         background: var(--primary-deep);
         color: var(--white);
         padding: 1.5rem;
@@ -300,20 +319,20 @@ body {
         border: none;
       }
 
-.table tbody td {
+      .table tbody td {
         padding: 1.25rem 1.5rem;
         vertical-align: middle;
         border-bottom: 1px solid var(--border-color);
       }
 
-.badge-category {
+      .badge-category {
         padding: 0.5rem 1rem;
         border-radius: 100px;
         font-weight: 700;
         font-size: 0.75rem;
       }
 
-.badge-workshop {
+      .badge-workshop {
         background: #dcfce7;
         color: #166534;
       }
@@ -330,7 +349,7 @@ body {
         color: #475569;
       }
 
-/* --- Stats & Misc --- */
+      /* --- Stats & Misc --- */
       .stats-box {
         background: rgba(255, 255, 255, 0.08);
         backdrop-filter: blur(10px);
@@ -341,19 +360,19 @@ body {
         transition: all 0.3s ease;
       }
 
-.stats-box:hover {
+      .stats-box:hover {
         background: rgba(255, 255, 255, 0.12);
         transform: translateY(-5px);
       }
 
-.stats-box h3 {
+      .stats-box h3 {
         font-size: 2.5rem;
         font-weight: 800;
         margin-bottom: 0.5rem;
         color: var(--accent);
       }
 
-.map-placeholder,
+      .map-placeholder,
       .gallery-placeholder {
         border-radius: 24px;
         background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
@@ -368,7 +387,7 @@ body {
         min-height: 300px;
       }
 
-.contact-strip {
+      .contact-strip {
         background: linear-gradient(
           135deg,
           var(--primary-deep) 0%,
@@ -380,7 +399,7 @@ body {
         box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
       }
 
-.contact-info-card {
+      .contact-info-card {
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 20px;
@@ -389,11 +408,11 @@ body {
         transition: background 0.3s ease;
       }
 
-.contact-info-card:hover {
+      .contact-info-card:hover {
         background: rgba(255, 255, 255, 0.1);
       }
 
-/* --- Footer --- */
+      /* --- Footer --- */
       footer {
         background: var(--primary-deep);
         color: #94a3b8;
@@ -401,21 +420,21 @@ body {
         border-top: 1px solid rgba(255, 255, 255, 0.05);
       }
 
-footer strong {
+      footer strong {
         color: var(--white);
       }
 
-footer a {
+      footer a {
         color: #94a3b8;
         text-decoration: none;
         transition: color 0.2s ease;
       }
 
-footer a:hover {
+      footer a:hover {
         color: var(--accent);
       }
 
-/* --- Animations --- */
+      /* --- Animations --- */
       @keyframes fadeInDown {
         from {
           opacity: 0;
@@ -427,25 +446,25 @@ footer a:hover {
         }
       }
 
-.btn-warning {
+      .btn-warning {
         background-color: var(--accent);
         border: none;
         color: var(--primary-deep);
         box-shadow: 0 4px 15px var(--accent-glow);
       }
 
-.btn-warning:hover {
+      .btn-warning:hover {
         background-color: #eab308;
         transform: translateY(-2px);
         box-shadow: 0 8px 20px var(--accent-glow);
       }
 
-.btn-lg {
+      .btn-lg {
         padding: 1rem 2rem;
         font-weight: 700;
       }
 
-#backToTop {
+      #backToTop {
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -462,13 +481,13 @@ footer a:hover {
         padding: 0;
       }
 
-#backToTop.show {
+      #backToTop.show {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
       }
 
-@media (max-width: 991.98px) {
+      @media (max-width: 991.98px) {
         .hero {
           padding-top: 100px;
           text-align: center;
@@ -489,8 +508,10 @@ footer a:hover {
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">
-          <span style="color: var(--accent)">Math & Net</span> Mashup 2026
+        <!-- ADDED LOGO TO NAVBAR -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+          <img src="https://arleta.site/interactivelink/1086/logo-mathnet2026.jpg" alt="Math & Net Logo" class="navbar-logo">
+          <span><span style="color: var(--accent)">Math & Net</span> Mashup 2026</span>
         </a>
         <button
           class="navbar-toggler border-0"
@@ -535,12 +556,14 @@ footer a:hover {
       </div>
     </nav>
 
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <header id="home" class="hero">
       <div class="container position-relative">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
-            <!--            <span class="hero-badge"><i class="bi bi-star-fill me-2"></i> UiTM Perlis Faculty Event</span> -->
+            <!-- ADDED LOGO TO HERO SECTION -->
+            <img src="https://arleta.site/interactivelink/1086/logo-mathnet2026.jpg" alt="Math & Net Logo" class="hero-logo">
+            
             <h1>Math & Net <br />Mashup Day 2026</h1>
             <p class="fs-5 fw-medium text-info mb-3">
               Mathematics • Computing • Creativity • Community
@@ -599,7 +622,7 @@ footer a:hover {
       </div>
     </header>
 
-<!-- Highlights Section -->
+    <!-- Highlights Section -->
     <section id="highlights" class="section section-soft">
       <div class="container">
         <div class="text-center mb-5">
@@ -674,7 +697,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
         <div class="row g-5 align-items-center">
@@ -747,7 +770,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Programme Overview -->
+    <!-- Programme Overview -->
     <section id="programme" class="section section-soft">
       <div class="container">
         <div class="text-center mb-5">
@@ -804,7 +827,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Featured Events -->
+    <!-- Featured Events -->
     <section id="events" class="section">
       <div class="container">
         <h2 class="section-title text-center">Featured Events</h2>
@@ -897,7 +920,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Registration -->
+    <!-- Registration -->
     <section id="register" class="section section-soft">
       <div class="container">
         <div class="row g-4">
@@ -973,7 +996,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Schedule Table -->
+    <!-- Schedule Table -->
     <section id="schedule" class="section">
       <div class="container">
         <div class="text-center mb-5">
@@ -1124,7 +1147,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Venue & Map -->
+    <!-- Venue & Map -->
     <section id="venue" class="section section-soft">
       <div class="container">
         <div class="row g-5 align-items-center">
@@ -1183,7 +1206,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Committee & Sponsors -->
+    <!-- Committee & Sponsors -->
     <section id="committee" class="section">
       <div class="container">
         <div class="row g-4">
@@ -1219,12 +1242,6 @@ footer a:hover {
                   Dr. Ahmad Yusri Dak<br />
                   Anas Fathul Ariffin
                 </div>
-                <!-- <div class="col-6"> -->
-                <!--   <small -->
-                <!--     class="d-block py-1 px-2 border-start border-primary mb-2" -->
-                <!--     >Deputy Director</small -->
-                <!--   > -->
-                <!-- </div> -->
                 <div class="col-6">
                   <small
                     class="d-block py-1 px-2 border-start border-primary mb-2"
@@ -1315,7 +1332,7 @@ footer a:hover {
                   >Siti Nor Nadrah Muhammad<br />Siti Fatimah Abd Rahman
                 </div>
 
-<div class="col-6">
+                <div class="col-6">
                   <small class="d-block py-1 px-2 border-start border-primary"
                     >Safety and Health </small
                   >Mohamad Najib Mohamad Fadzil<br />Nurzaid Muhd Zain
@@ -1361,7 +1378,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Gallery -->
+    <!-- Gallery -->
     <section id="gallery" class="section section-soft">
       <div class="container">
         <div class="row g-4 align-items-center">
@@ -1392,7 +1409,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Contact -->
+    <!-- Contact -->
     <section id="contact" class="section">
       <div class="container">
         <div class="contact-strip">
@@ -1414,7 +1431,7 @@ footer a:hover {
                     <strong class="d-block">En. Anas Fathul Ariffin</strong>
                   </div>
                 </div>
-				  
+                  
                 <div class="col-md-6">
                   <div class="contact-info-card">
                     <small
@@ -1455,7 +1472,7 @@ footer a:hover {
       </div>
     </section>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row align-items-center">
@@ -1496,7 +1513,7 @@ footer a:hover {
       <i class="bi bi-arrow-up fs-5"></i>
     </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Smooth scrolling & handle mobile menu collapse
       document.querySelectorAll(".nav-link").forEach((link) => {
