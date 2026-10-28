@@ -520,11 +520,20 @@
             2026</span
           >
         </a>
+        <!-- <button -->
+        <!--   class="navbar-toggler border-0" -->
+        <!--   type="button" -->
+        <!--   data-bs-toggle="collapse" -->
+        <!--   data-bs-target="#mainNav" -->
+        <!-- > -->
         <button
           class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Buka atau tutup menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -1049,8 +1058,9 @@
               <tr>
                 <td class="fw-bold text-nowrap">8:30 AM - 12:30 PM</td>
                 <td>
-                  Kursus Pendek Kolej Komuniti Arau (Anime, Solekan, Doodle,
-                  Mewarna)
+                  Kursus Pendek Kolej Komuniti Arau (Lukisan Anime, Solekan, Beg
+                  Doodle, Mewarna untuk Kanak-kanak, Crochet, TikTok Editing,
+                  Scratch)
                 </td>
                 <td>Bilik Kuliah</td>
                 <td>
@@ -1158,7 +1168,10 @@
               </tr>
               <tr>
                 <td class="fw-bold text-nowrap">12:30 PM - 1:30 PM</td>
-                <td>Majlis Penyampaian Hadiah Explorai Mathopia</td>
+                <td>
+                  Majlis Penyampaian Hadiah Explorace Mathopia: The Lost Crystal
+                  Adventure
+                </td>
                 <td>Ruang Legar Anjung Siswa</td>
                 <td>
                   <span class="badge-category badge-official">Official</span>
@@ -1185,7 +1198,7 @@
               </tr>
               <tr>
                 <td class="fw-bold text-nowrap">8:00 PM - 10:00 PM</td>
-                <td>Digital Chess Clash Night</td>
+                <td>Digital Chess Clash Night 2026</td>
                 <td>Ruang Legar Anjung Siswa</td>
                 <td>
                   <span class="badge-category badge-competition"
@@ -1635,7 +1648,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Smooth scrolling & handle mobile menu collapse
-      document.querySelectorAll(".nav-link").forEach((link) => {
+      //document.querySelectorAll(".nav-link").forEach((link) => {
+      document.querySelectorAll("#mainNav a").forEach((link) => {
         link.addEventListener("click", () => {
           const navbarCollapse = document.getElementById("mainNav");
           const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
